@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <form>
+                <div class="form-group">
+                    <label>Identificación</label>
+                    <input type="text" name="identificacion" [(ngModel)]="cliente.identificacion"
+                        class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Nombre</label>
+                    <input type="text" name="nombre" [(ngModel)]="cliente.nombre" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Capital Inicial</label>
+                    <input type="number" name="sexo" [(ngModel)]="cliente.capitalInicial" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Tasa deinteres</label>
+                    <input type="number" name="edad" [(ngModel)]="cliente.tasainteres" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Tiempo Duracion</label>
+                    <input type="number" name="pulsacion" [(ngModel)]="cliente.tiempo" class="form-control" />
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-primary mr-1" (click)="add()">Register</button>
+                    <button class="btn btn-secondary" type="reset">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
